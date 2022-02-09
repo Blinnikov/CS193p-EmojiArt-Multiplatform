@@ -21,6 +21,14 @@ struct Pasteboard {
 }
 
 extension View {
+  func paletteControlButtonStyle() -> some View {
+    self
+  }
+  
+  func popoverPadding() -> some View {
+    self
+  }
+  
   @ViewBuilder
   func wrappedInNavigationViewToMakeDismissable(_ dismiss: (() -> Void)?) -> some View {
     if UIDevice.current.userInterfaceIdiom != .pad, let dismiss = dismiss {

@@ -34,6 +34,14 @@ extension View {
   func wrappedInNavigationViewToMakeDismissable(_ dismiss: (() -> Void)?) -> some View {
     self
   }
+  
+  func paletteControlButtonStyle() -> some View {
+    self.buttonStyle(PlainButtonStyle()).foregroundColor(.accentColor).padding(.vertical)
+  }
+  
+  func popoverPadding() -> some View {
+    self.padding(.horizontal)
+  }
 }
 
 struct CantDoItPhotoPicker: View {
